@@ -26,6 +26,9 @@ PRODUCT_COPY_FILES += \
     vendor/bq/rockchip-common/proprietary/lib/libomxvpu.so:system/lib/libomxvpu.so \
     vendor/bq/rockchip-common/proprietary/lib/libomxvpu_enc.so:system/lib/libomxvpu_enc.so \
     vendor/bq/rockchip-common/proprietary/lib/librkswscale.so:system/lib/librkswscale.so \
+    vendor/bq/rockchip-common/proprietary/lib/libvideoeditor_core.so:system/lib/libvideoeditor_core.so \
+    vendor/bq/rockchip-common/proprietary/lib/libvideoeditor_jni.so:system/lib/libvideoeditor_jni.so \
+    vendor/bq/rockchip-common/proprietary/lib/libvideoeditorplayer.so:system/lib/libvideoeditorplayer.so \
     vendor/bq/rockchip-common/proprietary/lib/libvpu.so:system/lib/libvpu.so \
     vendor/bq/rockchip-common/proprietary/lib/libyuvtorgb.so:system/lib/libyuvtorgb.so \
     vendor/bq/rockchip-common/proprietary/lib/registry:system/lib/registry
