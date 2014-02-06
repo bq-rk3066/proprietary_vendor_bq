@@ -16,12 +16,3 @@
 # HAL
 PRODUCT_COPY_FILES += \
     vendor/bq/maxwell2lite/proprietary/lib/hw/sensors.rk30board.so:system/lib/hw/sensors.rk30board.so
-
-# Modules
-PRODUCT_COPY_FILES += \
-    vendor/bq/maxwell2lite/proprietary/lib/modules/mali.ko:system/lib/modules/mali.ko \
-    vendor/bq/maxwell2lite/proprietary/lib/modules/rk29-ipp.ko:system/lib/modules/rk29-ipp.ko \
-    vendor/bq/maxwell2lite/proprietary/lib/modules/rk30_mirroring.ko.3.0.8+:system/lib/modules/rk30_mirroring.ko.3.0.8+ \
-    vendor/bq/maxwell2lite/proprietary/lib/modules/rkwifi.ko:system/lib/modules/rkwifi.ko \
-    vendor/bq/maxwell2lite/proprietary/lib/modules/ump.ko:system/lib/modules/ump.ko \
-    vendor/bq/maxwell2lite/proprietary/lib/modules/vpu_service.ko:system/lib/modules/vpu_service.ko

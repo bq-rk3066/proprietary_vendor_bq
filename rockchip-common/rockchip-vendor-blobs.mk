@@ -13,31 +13,25 @@
 # limitations under the License.
 
 
-# Binaries
-PRODUCT_COPY_FILES += \
-    vendor/bq/rockchip-common/proprietary/bin/vold:system/bin/vold
-
 # Libraries
 PRODUCT_COPY_FILES += \
     vendor/bq/rockchip-common/proprietary/lib/libion.so:system/lib/libion.so \
-    vendor/bq/rockchip-common/proprietary/lib/libjpeghwdec.so:system/lib/libjpeghwdec.so \
     vendor/bq/rockchip-common/proprietary/lib/libjpeghwenc.so:system/lib/libjpeghwenc.so \
     vendor/bq/rockchip-common/proprietary/lib/libOMX_Core.so:system/lib/libOMX_Core.so \
-    vendor/bq/rockchip-common/proprietary/lib/libomxvpu.so:system/lib/libomxvpu.so \
+    vendor/bq/rockchip-common/proprietary/lib/libomxvpu_dec.so:system/lib/libomxvpu_dec.so \
     vendor/bq/rockchip-common/proprietary/lib/libomxvpu_enc.so:system/lib/libomxvpu_enc.so \
     vendor/bq/rockchip-common/proprietary/lib/librkswscale.so:system/lib/librkswscale.so \
     vendor/bq/rockchip-common/proprietary/lib/libvideoeditor_core.so:system/lib/libvideoeditor_core.so \
     vendor/bq/rockchip-common/proprietary/lib/libvideoeditor_jni.so:system/lib/libvideoeditor_jni.so \
     vendor/bq/rockchip-common/proprietary/lib/libvideoeditorplayer.so:system/lib/libvideoeditorplayer.so \
-    vendor/bq/rockchip-common/proprietary/lib/libvpu.so:system/lib/libvpu.so \
-    vendor/bq/rockchip-common/proprietary/lib/libyuvtorgb.so:system/lib/libyuvtorgb.so \
-    vendor/bq/rockchip-common/proprietary/lib/registry:system/lib/registry
+    vendor/bq/rockchip-common/proprietary/lib/libvpu.so:system/lib/libvpu.so
 
 # Statefright
 PRODUCT_COPY_FILES += \
     vendor/bq/rockchip-common/proprietary/lib/libapedec.so:system/lib/libapedec.so \
-    vendor/bq/rockchip-common/proprietary/lib/libhtml5_check.so:system/lib/libhtml5_check.so \
     vendor/bq/rockchip-common/proprietary/lib/libmediaplayerservice.so:system/lib/libmediaplayerservice.so \
+    vendor/bq/rockchip-common/proprietary/lib/librk_demux.so:system/lib/librk_demux.so \
+    vendor/bq/rockchip-common/proprietary/lib/librk_on2.so:system/lib/librk_on2.so \
     vendor/bq/rockchip-common/proprietary/lib/librkwmapro.so:system/lib/librkwmapro.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright.so:system/lib/libstagefright.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
@@ -46,6 +40,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_chromium_http.so:system/lib/libstagefright_chromium_http.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_enc_common.so:system/lib/libstagefright_enc_common.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_foundation.so:system/lib/libstagefright_foundation.so \
+    vendor/bq/rockchip-common/proprietary/lib/libstagefright_httplive.so:system/lib/libstagefright_httplive.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_omx.so:system/lib/libstagefright_omx.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_aacdec.so:system/lib/libstagefright_soft_aacdec.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_aacenc.so:system/lib/libstagefright_soft_aacenc.so \
@@ -54,6 +49,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_amrwbenc.so:system/lib/libstagefright_soft_amrwbenc.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_flacenc.so:system/lib/libstagefright_soft_flacenc.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_g711dec.so:system/lib/libstagefright_soft_g711dec.so \
+    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_gsmdec.so:system/lib/libstagefright_soft_gsmdec.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_h264dec.so:system/lib/libstagefright_soft_h264dec.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_h264enc.so:system/lib/libstagefright_soft_h264enc.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_mp3dec.so:system/lib/libstagefright_soft_mp3dec.so \
@@ -62,16 +58,9 @@ PRODUCT_COPY_FILES += \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_rawdec.so:system/lib/libstagefright_soft_rawdec.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_vorbisdec.so:system/lib/libstagefright_soft_vorbisdec.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_vpxdec.so:system/lib/libstagefright_soft_vpxdec.so \
+    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_vpxenc.so:system/lib/libstagefright_soft_vpxenc.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_wfd.so:system/lib/libstagefright_wfd.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_yuv.so:system/lib/libstagefright_yuv.so
-
-# DRM
-PRODUCT_COPY_FILES += \
-    vendor/bq/rockchip-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
-    vendor/bq/rockchip-common/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-    vendor/bq/rockchip-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/bq/rockchip-common/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
-    vendor/bq/rockchip-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
 
 # Mali
 PRODUCT_COPY_FILES += \
@@ -83,10 +72,21 @@ PRODUCT_COPY_FILES += \
 
 # HAL
 PRODUCT_COPY_FILES += \
+    vendor/bq/rockchip-common/proprietary/lib/hw/audio.primary.rk30board.so:system/lib/hw/audio.primary.rk30board.so \
+    vendor/bq/rockchip-common/proprietary/lib/hw/audio_policy.rk30board.so:system/lib/hw/audio_policy.rk30board.so \
     vendor/bq/rockchip-common/proprietary/lib/hw/camera.rk30board.so:system/lib/hw/camera.rk30board.so \
     vendor/bq/rockchip-common/proprietary/lib/hw/gpu.rk30board.so:system/lib/hw/gpu.rk30board.so \
     vendor/bq/rockchip-common/proprietary/lib/hw/gralloc.rk30board.so:system/lib/hw/gralloc.rk30board.so \
     vendor/bq/rockchip-common/proprietary/lib/hw/hwcomposer.rk30board.so:system/lib/hw/hwcomposer.rk30board.so
+
+# Modules
+PRODUCT_COPY_FILES += \
+    vendor/bq/rockchip-common/proprietary/lib/modules/mali.ko.3.0.36+:system/lib/modules/mali.ko.3.0.36+ \
+    vendor/bq/rockchip-common/proprietary/lib/modules/rk29-ipp.ko.3.0.36+:system/lib/modules/rk29-ipp.ko.3.0.36+ \
+    vendor/bq/rockchip-common/proprietary/lib/modules/rk30_mirroring.ko.3.0.36+:system/lib/modules/rk30_mirroring.ko.3.0.36+ \
+    vendor/bq/rockchip-common/proprietary/lib/modules/rkwifi.ko:system/lib/modules/rkwifi.ko \
+    vendor/bq/rockchip-common/proprietary/lib/modules/ump.ko.3.0.36+:system/lib/modules/ump.ko.3.0.36+ \
+    vendor/bq/rockchip-common/proprietary/lib/modules/vpu_service.ko.3.0.36+:system/lib/modules/vpu_service.ko.3.0.36+
 
 # Firmware
 PRODUCT_COPY_FILES += \
