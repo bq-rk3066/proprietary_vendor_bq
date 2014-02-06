@@ -20,3 +20,7 @@ PRODUCT_COPY_FILES += \
 # HAL
 PRODUCT_COPY_FILES += \
     vendor/bq/edison2qc/proprietary/lib/hw/sensors.rk30board.so:system/lib/hw/sensors.rk30board.so
+
+# Modules
+PRODUCT_COPY_FILES += \
+    vendor/bq/edison2qc/proprietary/lib/modules/rkwifi.ko:system/lib/modules/rkwifi.ko
