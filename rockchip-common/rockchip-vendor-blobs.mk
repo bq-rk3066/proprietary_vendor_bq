@@ -12,15 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
 # Libraries
 PRODUCT_COPY_FILES += \
+    vendor/bq/rockchip-common/proprietary/lib/libapedec.so:system/lib/libapedec.so \
     vendor/bq/rockchip-common/proprietary/lib/libion.so:system/lib/libion.so \
     vendor/bq/rockchip-common/proprietary/lib/libjpeghwenc.so:system/lib/libjpeghwenc.so \
+    vendor/bq/rockchip-common/proprietary/lib/libmediaplayerservice.so:system/lib/libmediaplayerservice.so \
     vendor/bq/rockchip-common/proprietary/lib/libOMX_Core.so:system/lib/libOMX_Core.so \
     vendor/bq/rockchip-common/proprietary/lib/libomxvpu_dec.so:system/lib/libomxvpu_dec.so \
     vendor/bq/rockchip-common/proprietary/lib/libomxvpu_enc.so:system/lib/libomxvpu_enc.so \
+    vendor/bq/rockchip-common/proprietary/lib/libRkOMX_Resourcemanager.so:system/lib/libRkOMX_Resourcemanager.so \
     vendor/bq/rockchip-common/proprietary/lib/librkswscale.so:system/lib/librkswscale.so \
+    vendor/bq/rockchip-common/proprietary/lib/librkwmapro.so:system/lib/librkwmapro.so \
+    vendor/bq/rockchip-common/proprietary/lib/librk_audio.so:system/lib/librk_audio.so \
+    vendor/bq/rockchip-common/proprietary/lib/librk_demux.so:system/lib/librk_demux.so \
+    vendor/bq/rockchip-common/proprietary/lib/librk_on2.so:system/lib/librk_on2.so \
     vendor/bq/rockchip-common/proprietary/lib/libvideoeditor_core.so:system/lib/libvideoeditor_core.so \
     vendor/bq/rockchip-common/proprietary/lib/libvideoeditor_jni.so:system/lib/libvideoeditor_jni.so \
     vendor/bq/rockchip-common/proprietary/lib/libvideoeditorplayer.so:system/lib/libvideoeditorplayer.so \
@@ -28,11 +34,6 @@ PRODUCT_COPY_FILES += \
 
 # Statefright
 PRODUCT_COPY_FILES += \
-    vendor/bq/rockchip-common/proprietary/lib/libapedec.so:system/lib/libapedec.so \
-    vendor/bq/rockchip-common/proprietary/lib/libmediaplayerservice.so:system/lib/libmediaplayerservice.so \
-    vendor/bq/rockchip-common/proprietary/lib/librk_demux.so:system/lib/librk_demux.so \
-    vendor/bq/rockchip-common/proprietary/lib/librk_on2.so:system/lib/librk_on2.so \
-    vendor/bq/rockchip-common/proprietary/lib/librkwmapro.so:system/lib/librkwmapro.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright.so:system/lib/libstagefright.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_amrnb_common.so:system/lib/libstagefright_amrnb_common.so \
