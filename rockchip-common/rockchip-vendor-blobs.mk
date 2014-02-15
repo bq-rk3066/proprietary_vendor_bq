@@ -14,10 +14,8 @@
 
 # Libraries
 PRODUCT_COPY_FILES += \
-    vendor/bq/rockchip-common/proprietary/lib/libapedec.so:system/lib/libapedec.so \
     vendor/bq/rockchip-common/proprietary/lib/libion.so:system/lib/libion.so \
     vendor/bq/rockchip-common/proprietary/lib/libjpeghwenc.so:system/lib/libjpeghwenc.so \
-    vendor/bq/rockchip-common/proprietary/lib/libmediaplayerservice.so:system/lib/libmediaplayerservice.so \
     vendor/bq/rockchip-common/proprietary/lib/libOMX_Core.so:system/lib/libOMX_Core.so \
     vendor/bq/rockchip-common/proprietary/lib/libomxvpu_dec.so:system/lib/libomxvpu_dec.so \
     vendor/bq/rockchip-common/proprietary/lib/libomxvpu_enc.so:system/lib/libomxvpu_enc.so \
@@ -28,7 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/rockchip-common/proprietary/lib/librk_demux.so:system/lib/librk_demux.so \
     vendor/bq/rockchip-common/proprietary/lib/librk_on2.so:system/lib/librk_on2.so \
     vendor/bq/rockchip-common/proprietary/lib/libvideoeditor_core.so:system/lib/libvideoeditor_core.so \
-    vendor/bq/rockchip-common/proprietary/lib/libvideoeditor_jni.so:system/lib/libvideoeditor_jni.so \
     vendor/bq/rockchip-common/proprietary/lib/libvideoeditorplayer.so:system/lib/libvideoeditorplayer.so \
     vendor/bq/rockchip-common/proprietary/lib/libvpu.so:system/lib/libvpu.so
 
@@ -36,32 +33,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright.so:system/lib/libstagefright.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_amrnb_common.so:system/lib/libstagefright_amrnb_common.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_avc_common.so:system/lib/libstagefright_avc_common.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_chromium_http.so:system/lib/libstagefright_chromium_http.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_enc_common.so:system/lib/libstagefright_enc_common.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_foundation.so:system/lib/libstagefright_foundation.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_httplive.so:system/lib/libstagefright_httplive.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_omx.so:system/lib/libstagefright_omx.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_aacdec.so:system/lib/libstagefright_soft_aacdec.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_aacenc.so:system/lib/libstagefright_soft_aacenc.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_amrdec.so:system/lib/libstagefright_soft_amrdec.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_amrnbenc.so:system/lib/libstagefright_soft_amrnbenc.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_amrwbenc.so:system/lib/libstagefright_soft_amrwbenc.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_flacenc.so:system/lib/libstagefright_soft_flacenc.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_g711dec.so:system/lib/libstagefright_soft_g711dec.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_gsmdec.so:system/lib/libstagefright_soft_gsmdec.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_h264dec.so:system/lib/libstagefright_soft_h264dec.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_h264enc.so:system/lib/libstagefright_soft_h264enc.so \
     vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_mp3dec.so:system/lib/libstagefright_soft_mp3dec.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_mpeg4dec.so:system/lib/libstagefright_soft_mpeg4dec.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_mpeg4enc.so:system/lib/libstagefright_soft_mpeg4enc.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_rawdec.so:system/lib/libstagefright_soft_rawdec.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_vorbisdec.so:system/lib/libstagefright_soft_vorbisdec.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_vpxdec.so:system/lib/libstagefright_soft_vpxdec.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_soft_vpxenc.so:system/lib/libstagefright_soft_vpxenc.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_wfd.so:system/lib/libstagefright_wfd.so \
-    vendor/bq/rockchip-common/proprietary/lib/libstagefright_yuv.so:system/lib/libstagefright_yuv.so
+    vendor/bq/rockchip-common/proprietary/lib/libstagefright_wfd.so:system/lib/libstagefright_wfd.so
 
 # Mali
 PRODUCT_COPY_FILES += \
