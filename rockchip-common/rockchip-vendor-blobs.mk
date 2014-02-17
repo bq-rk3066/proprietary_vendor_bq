@@ -61,11 +61,11 @@ PRODUCT_COPY_FILES += \
     vendor/bq/rockchip-common/proprietary/lib/modules/rk29-ipp.ko.3.0.36+:system/lib/modules/rk29-ipp.ko.3.0.36+ \
     vendor/bq/rockchip-common/proprietary/lib/modules/rk30_mirroring.ko.3.0.36+:system/lib/modules/rk30_mirroring.ko.3.0.36+ \
     vendor/bq/rockchip-common/proprietary/lib/modules/ump.ko.3.0.36+:system/lib/modules/ump.ko.3.0.36+ \
-    vendor/bq/rockchip-common/proprietary/lib/modules/vpu_service.ko.3.0.36+:system/lib/modules/vpu_service.ko.3.0.36+
+    vendor/bq/rockchip-common/proprietary/lib/modules/vpu_service.ko.3.0.36+:system/lib/modules/vpu_service.ko.3.0.36+ \
+    vendor/bq/rockchip-common/proprietary/lib/modules/wlan.ko:system/lib/modules/wlan.ko
 
 # Firmware
 PRODUCT_COPY_FILES += \
     vendor/bq/rockchip-common/proprietary/etc/firmware/BCM4330B1.hcd:system/etc/firmware/BCM4330B1.hcd \
     vendor/bq/rockchip-common/proprietary/etc/firmware/fw_RK903b2.bin:system/etc/firmware/fw_RK903b2.bin \
-    vendor/bq/rockchip-common/proprietary/etc/firmware/fw_RK903b2_apsta.bin:system/etc/firmware/fw_RK903b2_apsta.bin \
-    vendor/bq/rockchip-common/proprietary/etc/firmware/fw_RK903b2_p2p.bin:system/etc/firmware/fw_RK903b2_p2p.bin
+    vendor/bq/rockchip-common/proprietary/etc/firmware/fw_RK903b2_apsta.bin:system/etc/firmware/fw_RK903b2_apsta.bin
