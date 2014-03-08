@@ -12,6 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Binaries
+PRODUCT_COPY_FILES += \
+    vendor/bq/rockchip-common/proprietary/bin/glgps:system/bin/performance \
+    vendor/bq/rockchip-common/proprietary/bin/wfd:system/bin/wfd
+
 # Libraries
 PRODUCT_COPY_FILES += \
     vendor/bq/rockchip-common/proprietary/lib/libion.so:system/lib/libion.so \
@@ -19,6 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/rockchip-common/proprietary/lib/libOMX_Core.so:system/lib/libOMX_Core.so \
     vendor/bq/rockchip-common/proprietary/lib/libomxvpu_dec.so:system/lib/libomxvpu_dec.so \
     vendor/bq/rockchip-common/proprietary/lib/libomxvpu_enc.so:system/lib/libomxvpu_enc.so \
+    vendor/bq/rockchip-common/proprietary/lib/libperformance_runtime.so:system/lib/libperformance_runtime.so \
     vendor/bq/rockchip-common/proprietary/lib/libRkOMX_Resourcemanager.so:system/lib/libRkOMX_Resourcemanager.so \
     vendor/bq/rockchip-common/proprietary/lib/librkswscale.so:system/lib/librkswscale.so \
     vendor/bq/rockchip-common/proprietary/lib/librkwmapro.so:system/lib/librkwmapro.so \
