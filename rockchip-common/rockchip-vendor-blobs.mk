@@ -14,7 +14,7 @@
 
 # Binaries
 PRODUCT_COPY_FILES += \
-    vendor/bq/rockchip-common/proprietary/bin/glgps:system/bin/performance \
+    vendor/bq/rockchip-common/proprietary/bin/performance:system/bin/performance \
     vendor/bq/rockchip-common/proprietary/bin/wfd:system/bin/wfd
 
 # Libraries
