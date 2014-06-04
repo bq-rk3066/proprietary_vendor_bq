@@ -50,7 +50,9 @@ PRODUCT_COPY_FILES += \
     vendor/bq/rockchip-common/proprietary/lib/libUMP.so:system/lib/libUMP.so \
     vendor/bq/rockchip-common/proprietary/lib/egl/libEGL_mali.so:system/lib/egl/libEGL_mali.so \
     vendor/bq/rockchip-common/proprietary/lib/egl/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \
-    vendor/bq/rockchip-common/proprietary/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so
+    vendor/bq/rockchip-common/proprietary/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so \
+    vendor/bq/rockchip-common/proprietary/lib/modules/mali.ko.3.0.36+:system/lib/modules/mali.ko.3.0.36+ \
+    vendor/bq/rockchip-common/proprietary/lib/modules/ump.ko.3.0.36+:system/lib/modules/ump.ko.3.0.36+
 
 # HAL
 PRODUCT_COPY_FILES += \
@@ -61,11 +63,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/rockchip-common/proprietary/lib/hw/gpu.rk30board.so:system/lib/hw/gpu.rk30board.so \
     vendor/bq/rockchip-common/proprietary/lib/hw/gralloc.rk30board.so:system/lib/hw/gralloc.rk30board.so \
     vendor/bq/rockchip-common/proprietary/lib/hw/hwcomposer.rk30board.so:system/lib/hw/hwcomposer.rk30board.so
-
-# Modules
-PRODUCT_COPY_FILES += \
-    vendor/bq/rockchip-common/proprietary/lib/modules/mali.ko.3.0.36+:system/lib/modules/mali.ko.3.0.36+ \
-    vendor/bq/rockchip-common/proprietary/lib/modules/ump.ko.3.0.36+:system/lib/modules/ump.ko.3.0.36+
 
 # Firmware
 PRODUCT_COPY_FILES += \
